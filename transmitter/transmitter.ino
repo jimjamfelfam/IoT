@@ -6,7 +6,7 @@ RF24 radio(9,10);
 const uint64_t pipe = 0xE8E8F0F0E1LL;
 int interruptPin = 3;
 long last_bounce;
-long de_bounce = 50;
+long de_bounce = 40;
 bool state = false;
 
 void setup(void){
