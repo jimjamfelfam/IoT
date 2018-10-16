@@ -4,13 +4,13 @@
 #include <DHT.h>
 
 /* WiFi Settings */
-String ssid      = "Jamie";
-String password  = "icelandwifi2016";
+String ssid      = "[Name]";
+String password  = "[Password]";
 
 /* Azure IOT Hub Settings */
-String mqtt_server = "dsjafelddf09.azure-devices.net";
-String deviceName  = "CurrentMonitor1";
-String deviceSAS   = "SharedAccessSignature sr=dsjafelddf09.azure-devices.net%2Fdevices%2FCurrentMonitor1&sig=OR7bX67Le87QOwFbeWjyEOOlaXt3o6cF48Pkmt3XHj0%3D&se=1565308891";
+String mqtt_server = "[Server Name]";
+String deviceName  = "[Device Name]";
+String deviceSAS   = "[Device SAS]";
 long interval           = 15000; //(ms) - 15 seconds between reports
 /* Azure IOT Hub Settings */
 
