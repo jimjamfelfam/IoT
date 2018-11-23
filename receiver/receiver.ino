@@ -12,6 +12,7 @@ void setup(void){
   radio.openReadingPipe(1,pipe);
   radio.startListening();
   pinMode(LED1, OUTPUT);
+  digitalWrite(LED1,HIGH);
 }
 
 void loop(void){
@@ -19,11 +20,13 @@ void loop(void){
     radio.read(msg,1); 
     if(msg[0]==111){
       digitalWrite(LED1, HIGH);
-      delay(100);
+//      delay(100);
+    }
+    if(msg[0]==222){
+    digitalWrite(LED1,LOW);
     }
   }
   else{
     Serial.println("No radio available");
-    digitalWrite(LED1,LOW);
   }
 }
