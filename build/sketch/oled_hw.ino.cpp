@@ -15,7 +15,7 @@ Adafruit_SSD1306 display(OLED_RESET);
 
 #line 13 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_hw\\oled_hw.ino"
 void setup();
-#line 29 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_hw\\oled_hw.ino"
+#line 35 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_hw\\oled_hw.ino"
 void loop();
 #line 13 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_hw\\oled_hw.ino"
 void setup() {
@@ -28,8 +28,14 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
-  display.println("Hello from:");
-  display.println("http://arduino-er.blogspot.com/");
+  display.println("Hello World");
+  display.println("From:Jamie Feldman");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
   display.display();
 
 }
@@ -38,3 +44,4 @@ void loop() {
   // put your main code here, to run repeatedly:
 
 }
+

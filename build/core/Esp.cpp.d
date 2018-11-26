@@ -56,8 +56,8 @@ d:\OneDrive\Documents\IoT\build\core\Esp.cpp.o: \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/Stream.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/md5.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\debug.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\generic/pins_arduino.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\generic/common.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/pins_arduino.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/../generic/common.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\flash_utils.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\eboot_command.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\interrupts.h \

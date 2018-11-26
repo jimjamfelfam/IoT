@@ -56,8 +56,8 @@ d:\OneDrive\Documents\IoT\build\sketch\oled_hw.ino.cpp.o: \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/Stream.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/md5.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/debug.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\generic/pins_arduino.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\generic/common.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/pins_arduino.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/../generic/common.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\SPI/SPI.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\Wire/Wire.h \
  C:\Program\ Files\ (x86)\Arduino\libraries\Adafruit-GFX-Library-master/Adafruit_GFX.h \

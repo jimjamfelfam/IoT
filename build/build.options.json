@@ -2,7 +2,7 @@
   "additionalFiles": "",
   "builtInLibrariesFolders": "C:\\Program Files (x86)\\Arduino\\libraries",
   "customBuildProperties": "build.path=d:\\OneDrive\\Documents\\IoT\\build,build.warn_data_percentage=75,runtime.tools.esptool.path=C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\esptool\\0.4.13,runtime.tools.xtensa-lx106-elf-gcc.path=C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\xtensa-lx106-elf-gcc\\1.20.0-26-gb404fb9-2,runtime.tools.mkspiffs.path=C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\tools\\mkspiffs\\0.2.0",
-  "fqbn": "esp8266:esp8266:generic:CpuFrequency=80,VTable=flash,ResetMethod=ck,CrystalFreq=26,FlashFreq=40,FlashMode=qio,FlashSize=512K0,led=2,LwIPVariant=v2mss536,Debug=Disabled,DebugLevel=None____,FlashErase=none,UploadSpeed=115200",
+  "fqbn": "esp8266:esp8266:nodemcuv2:CpuFrequency=80,VTable=flash,FlashSize=4M1M,LwIPVariant=v2mss536,Debug=Disabled,DebugLevel=None____,FlashErase=none,UploadSpeed=115200",
   "hardwareFolders": "C:\\Program Files (x86)\\Arduino\\hardware,C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages",
   "otherLibrariesFolders": "D:\\OneDrive\\Documents\\Arduino\\libraries",
   "runtime.ide.version": "10806",

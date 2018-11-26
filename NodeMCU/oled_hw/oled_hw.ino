@@ -20,8 +20,14 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(WHITE);
   display.setCursor(0,0);
-  display.println("Hello from:");
-  display.println("http://arduino-er.blogspot.com/");
+  display.println("Hello World");
+  display.println("From:Jamie Feldman");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
   display.display();
 
 }

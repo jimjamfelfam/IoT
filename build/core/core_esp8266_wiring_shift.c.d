@@ -33,5 +33,5 @@ d:\OneDrive\Documents\IoT\build\core\core_esp8266_wiring_shift.c.o: \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/c_types.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\twi.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\core_esp8266_features.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\generic/pins_arduino.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\generic/common.h
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/pins_arduino.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/../generic/common.h

@@ -6,7 +6,7 @@
 # 5 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_hw\\oled_hw.ino" 2
 
 
-Adafruit_SSD1306 display(2 /*4*/);
+Adafruit_SSD1306 display(16 /*4*/);
 
 
 
@@ -22,8 +22,14 @@ void setup() {
   display.setTextSize(1);
   display.setTextColor(1 /*|< Draw 'on' pixels*/);
   display.setCursor(0,0);
-  display.println("Hello from:");
-  display.println("http://arduino-er.blogspot.com/");
+  display.println("Hello World");
+  display.println("From:Jamie Feldman");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
+  display.println("TEST TEST TEST TEST");
   display.display();
 
 }
