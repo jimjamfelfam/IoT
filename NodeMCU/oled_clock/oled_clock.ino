@@ -6,26 +6,19 @@
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
-#define OLED_RESET LED_BUILTIN  //4
+#define OLED_RESET -1
 Adafruit_SSD1306 display(OLED_RESET);
 
 /* WiFi Settings */
-const char* ssid      = "Just Hold on Wifi's at Home";
-const char* password  = "Drakecauseidetthewifi";
+#define ssid      "Jamie"
+#define password  "jimjamfelfam"
 
 int ledPin = 13;
 
 int timezone = 7 * 3600;
 int dst = 0;
 
-#if (SSD1306_LCDHEIGHT != 64)
-#error("Height incorrect, please fix Adafruit_SSD1306.h!");
-#endif
-
-
-
 void setup() {
-
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 
   // Clear the buffer.
@@ -44,6 +37,7 @@ void setup() {
   display.println("Wifi connecting to ");
   display.println( ssid );
 
+  WiFi.mode(WIFI_STA);
   WiFi.begin(ssid,password);
  
   display.println("\nConnecting");

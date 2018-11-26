@@ -1,62 +1,68 @@
-# 1 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino"
-# 1 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino"
-# 2 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino" 2
-# 3 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino" 2
+#include <Arduino.h>
+#line 1 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino"
+#line 1 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino"
+#include <ESP8266WiFi.h>
+#include <time.h>
 
-# 5 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino" 2
-# 6 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino" 2
-# 7 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino" 2
-# 8 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino" 2
+#include <SPI.h>
+#include <Wire.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_SSD1306.h>
 
-
-Adafruit_SSD1306 display(-1);
+#define OLED_RESET -1
+Adafruit_SSD1306 display(OLED_RESET);
 
 /* WiFi Settings */
-
-
+#define ssid      "Jamie"
+#define password  "jimjamfelfam"
 
 int ledPin = 13;
 
 int timezone = 7 * 3600;
 int dst = 0;
 
+#line 21 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino"
+void setup();
+#line 80 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino"
+void loop();
+#line 21 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino"
 void setup() {
-  display.begin(0x02 /*|< Gen. display voltage from 3.3V*/, 0x3C);
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 
   // Clear the buffer.
   display.clearDisplay();
   display.display();
-
-  pinMode(ledPin,0x01);
-  digitalWrite(ledPin,0x0);
+  
+  pinMode(ledPin,OUTPUT);
+  digitalWrite(ledPin,LOW);
 
   Serial.begin(115200);
 
   display.setTextSize(1);
-  display.setTextColor(1 /*|< Draw 'on' pixels*/);
-
+  display.setTextColor(WHITE);
+  
   display.setCursor(0,0);
   display.println("Wifi connecting to ");
-  display.println( "Jamie" );
+  display.println( ssid );
 
   WiFi.mode(WIFI_STA);
-  WiFi.begin("Jamie","jimjamfelfam");
-
+  WiFi.begin(ssid,password);
+ 
   display.println("\nConnecting");
 
   display.display();
 
   while( WiFi.status() != WL_CONNECTED ){
       delay(500);
-      display.print(".");
-      display.display();
+      display.print("."); 
+      display.display();       
   }
 
   // Clear the buffer.
   display.clearDisplay();
   display.display();
   display.setCursor(0,0);
-
+  
   display.println("Wifi Connected!");
   display.print("IP:");
   display.println(WiFi.localIP() );
@@ -68,11 +74,11 @@ void setup() {
 
   while(!time(nullptr)){
      Serial.print("*");
-
+     
      delay(1000);
   }
-  display.println("\nTime response....OK");
-  display.display();
+  display.println("\nTime response....OK"); 
+  display.display();  
   delay(1000);
 
   display.clearDisplay();
@@ -80,42 +86,42 @@ void setup() {
 }
 
 void loop() {
-
+  
   time_t now = time(nullptr);
   struct tm* p_tm = localtime(&now);
-
+  
   Serial.print(p_tm->tm_mday);
   Serial.print("/");
   Serial.print(p_tm->tm_mon + 1);
   Serial.print("/");
   Serial.print(p_tm->tm_year + 1900);
-
+  
   Serial.print(" ");
-
+  
   Serial.print(p_tm->tm_hour);
   Serial.print(":");
   Serial.print(p_tm->tm_min);
   Serial.print(":");
   Serial.println(p_tm->tm_sec);
-
+  
   // Clear the buffer.
   display.clearDisplay();
-
+ 
   display.setTextSize(3);
-  display.setTextColor(1 /*|< Draw 'on' pixels*/);
-
+  display.setTextColor(WHITE);
+  
   display.setCursor(0,0);
   display.print(p_tm->tm_hour);
   display.print(":");
   if( p_tm->tm_min <10)
-    display.print("0");
+    display.print("0"); 
   display.print(p_tm->tm_min);
-
+  
   display.setTextSize(2);
   display.setCursor(90,5);
   display.print(".");
   if( p_tm->tm_sec <10)
-    display.print("0");
+    display.print("0"); 
   display.print(p_tm->tm_sec);
 
   display.setTextSize(1);

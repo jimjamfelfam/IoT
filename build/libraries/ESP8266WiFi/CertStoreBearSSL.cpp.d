@@ -1,5 +1,6 @@
-d:\OneDrive\Documents\IoT\build\sketch\oled_hw.ino.cpp.o: \
- d:\OneDrive\Documents\IoT\build\sketch\oled_hw.ino.cpp \
+d:\OneDrive\Documents\IoT\build\libraries\ESP8266WiFi\CertStoreBearSSL.cpp.o: \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\ESP8266WiFi\src\CertStoreBearSSL.cpp \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\ESP8266WiFi\src\CertStoreBearSSL.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/Arduino.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/libc/xtensa-lx106-elf/include/stdlib.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/libc/xtensa-lx106-elf/include/machine/ieeefp.h \
@@ -58,9 +59,17 @@ d:\OneDrive\Documents\IoT\build\sketch\oled_hw.ino.cpp.o: \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/debug.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/pins_arduino.h \
  C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/../generic/common.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\SPI/SPI.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\Wire/Wire.h \
- C:\Program\ Files\ (x86)\Arduino\libraries\Adafruit-GFX-Library-master/Adafruit_GFX.h \
- C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/Print.h \
- C:\Program\ Files\ (x86)\Arduino\libraries\Adafruit-GFX-Library-master/gfxfont.h \
- C:\Program\ Files\ (x86)\Arduino\libraries\Adafruit_SSD1306-master/Adafruit_SSD1306.h
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\ESP8266WiFi\src/BearSSLHelpers.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_hash.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_hmac.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_rand.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_prf.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_block.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_aead.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_rsa.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_ec.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_ssl.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_x509.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_pem.h \
+ C:\Users\Jamie\AppData\Local\Arduino15\packages\esp8266\hardware\esp8266\2.4.2/tools/sdk/include/bearssl/bearssl_port.h
