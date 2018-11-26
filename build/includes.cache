@@ -1,0 +1,67 @@
+[
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\cores\\esp8266"
+  },
+  {
+    "Sourcefile": "",
+    "Include": "",
+    "Includepath": "C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\variants\\generic"
+  },
+  {
+    "Sourcefile": "d:\\OneDrive\\Documents\\IoT\\build\\sketch\\oled_hw.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\libraries\\SPI"
+  },
+  {
+    "Sourcefile": "d:\\OneDrive\\Documents\\IoT\\build\\sketch\\oled_hw.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\libraries\\Wire"
+  },
+  {
+    "Sourcefile": "d:\\OneDrive\\Documents\\IoT\\build\\sketch\\oled_hw.ino.cpp",
+    "Include": "Adafruit_GFX.h",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit-GFX-Library-master"
+  },
+  {
+    "Sourcefile": "d:\\OneDrive\\Documents\\IoT\\build\\sketch\\oled_hw.ino.cpp",
+    "Include": "Adafruit_SSD1306.h",
+    "Includepath": "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit_SSD1306-master"
+  },
+  {
+    "Sourcefile": "d:\\OneDrive\\Documents\\IoT\\build\\sketch\\oled_hw.ino.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\libraries\\SPI\\SPI.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages\\esp8266\\hardware\\esp8266\\2.4.2\\libraries\\Wire\\Wire.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit-GFX-Library-master\\Adafruit_GFX.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit-GFX-Library-master\\Adafruit_SPITFT.cpp",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit-GFX-Library-master\\glcdfont.c",
+    "Include": "",
+    "Includepath": ""
+  },
+  {
+    "Sourcefile": "C:\\Program Files (x86)\\Arduino\\libraries\\Adafruit_SSD1306-master\\Adafruit_SSD1306.cpp",
+    "Include": "",
+    "Includepath": ""
+  }
+]
