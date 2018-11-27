@@ -20,7 +20,6 @@ void loop(void){
     radio.read(msg,1); 
     if(msg[0]==111){
       digitalWrite(LED1, HIGH);
-//      delay(100);
     }
     if(msg[0]==222){
     digitalWrite(LED1,LOW);
