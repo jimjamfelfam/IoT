@@ -46,8 +46,8 @@ String web_Password   = "admin";
 String devicePassword = "GG0IaUO2UqaejsEkdtzlwBbG9kab/RZKoE4K+SeEKe4=";
 
 /* WiFi Settings */
-String ssid      = "Just Hold on Wifi's at Home";
-String password  = "Drakecauseidetthewifi";
+String ssid      = "jamie";
+String password  = "jimjamfelfam";
 
 /* Azure IOT Hub Settings */
 String serverName  = "jafelhub.azure-devices.net";
@@ -795,7 +795,7 @@ void loop()
 {
   connectToWiFi();
   connectToIoTHub();
-//  log("client.loop start");
+  log("client.loop start");
   client.loop();
   
   if (Serial.available() > 0) {
@@ -804,30 +804,30 @@ void loop()
   }
 
   Irms = emon1.calcIrms(1480);  // Calculate Irms only
-//  log("calcIrms");
+  log("calcIrms");
   log("loop counter pre");
   log(String(loopCounter,5));
   ampAverage = ((ampAverage * loopCounter) + Irms) / ( loopCounter + 1);
   log("loop counter post");
   log(String(loopCounter,5));
-//  log("Irms:");
-//  log(String(Irms,10));
+  log("Irms:");
+  log(String(Irms,10));
   if (loopCounter >= samplesPerMsg) {
-//    if (Irms > minimumReading) {                 // less than 2 Amps we send 0 for averaging
-//      sendMessage("amps", ampAverage);
-//      log("************************");
-//      log("ampAverage");
-//      log(String(ampAverage,5));
-//    } else {
-//      sendMessage("amps", 0.00);
-//      log("************************");
-//      log("0.00");
-//    }
+    if (Irms > minimumReading) {                 // less than 2 Amps we send 0 for averaging
+      sendMessage("amps", ampAverage);
+      log("************************");
+      log("ampAverage");
+      log(String(ampAverage,5));
+    } else {
+      sendMessage("amps", 0.00);
+      log("************************");
+      log("0.00");
+    }
     AAdebug=1000000*ampAverage;
     sendMessage("amps", AAdebug);
     log("************************");
-//    log("ampAverage");
-//    log(String(AAdebug,5));
+    log("ampAverage");
+    log(String(AAdebug,5));
     loopCounter = 0;
     ampAverage = 0;
   }

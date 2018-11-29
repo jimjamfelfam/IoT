@@ -1,3 +1,6 @@
+#include <Arduino.h>
+#line 1 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\test\\test.ino"
+#line 1 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\test\\test.ino"
 #include <ESP8266WiFi.h>
 #include <time.h>
 
@@ -19,6 +22,13 @@ int dst = 0;
 time_t this_second =0;
 time_t last_second =0;
 
+#line 22 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\test\\test.ino"
+void setup();
+#line 38 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\test\\test.ino"
+void loop();
+#line 47 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\test\\test.ino"
+void displayinit();
+#line 22 "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\test\\test.ino"
 void setup() {
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 

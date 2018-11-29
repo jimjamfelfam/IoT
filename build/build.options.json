@@ -6,6 +6,6 @@
   "hardwareFolders": "C:\\Program Files (x86)\\Arduino\\hardware,C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages",
   "otherLibrariesFolders": "D:\\OneDrive\\Documents\\Arduino\\libraries",
   "runtime.ide.version": "10806",
-  "sketchLocation": "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\oled_clock\\oled_clock.ino",
+  "sketchLocation": "d:\\OneDrive\\Documents\\IoT\\NodeMCU\\test\\test.ino",
   "toolsFolders": "C:\\Program Files (x86)\\Arduino\\tools-builder,C:\\Program Files (x86)\\Arduino\\hardware\\tools\\avr,C:\\Users\\Jamie\\AppData\\Local\\Arduino15\\packages"
 }

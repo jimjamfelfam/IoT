@@ -50,16 +50,16 @@ void setup() {
       break;
     case 6:
       display.println("Disconnected");
+      display.println("\nConnecting");
       break;
     default:
       display.println("Default");
       break;    
-  } 
-  display.println("\nConnecting");
+  }
 
   display.display();
 
-  while( WiFi.status() == WL_DISCONNECTED){
+  while(WiFi.status() == WL_DISCONNECTED){
       delay(500);
       display.print("."); 
       display.display();       
@@ -69,8 +69,7 @@ void setup() {
   display.clearDisplay();
   display.display();
   display.setCursor(0,0);
-  
-  
+    
   switch(WiFi.status()){
     case 0:
       display.println("Idle");
@@ -89,13 +88,16 @@ void setup() {
     case 6:
       display.println("Disonnected");
       break;
+    default:
+      display.println("Default");
+      break; 
   }
 
   display.display();
 
   delay(1000);
 
-  configTime(timezone, dst, "ca.pool.ntp.org", "time.nist.gov", "time1.google.com");
+  configTime(timezone, dst, "time1.google.com", "ca.pool.ntp.org", "time.nist.gov");
   display.println("Waiting for NTP...");
 
   while(!time(nullptr)){
@@ -116,6 +118,7 @@ void loop() {
   time_t now = time(nullptr);
   struct tm* p_tm = localtime(&now);
   
+  // serial print date
   Serial.print(p_tm->tm_mday);
   Serial.print("/");
   Serial.print(p_tm->tm_mon + 1);
@@ -124,6 +127,7 @@ void loop() {
   
   Serial.print(" ");
   
+  //serial print time
   Serial.print(p_tm->tm_hour);
   Serial.print(":");
   Serial.print(p_tm->tm_min);
@@ -132,12 +136,13 @@ void loop() {
   
   // Clear the buffer.
   display.clearDisplay();
- 
-  display.setTextSize(2);
   display.setTextColor(WHITE);
   
   // hours : minutes
-  display.setCursor(0,0);
+  display.setTextSize(4);  
+  display.setCursor(2,20);
+  if( p_tm->tm_hour <10)
+    display.print("0"); 
   display.print(p_tm->tm_hour);
   display.print(":");
   if( p_tm->tm_min <10)
@@ -145,16 +150,11 @@ void loop() {
   display.print(p_tm->tm_min);
 
   // seconds
-  display.setTextSize(1);
-  display.setCursor(57,0);
-  display.print(".");
-  if( p_tm->tm_sec <10)
-    display.print("0"); 
-  display.print(p_tm->tm_sec);
+  display.fillRect(3,54,2*(p_tm->tm_sec),4,WHITE);
 
   // day / month / year
   display.setTextSize(1);
-  display.setCursor(80,0);
+  display.setCursor(0,0);
   display.print(p_tm->tm_mday);
   display.print(".");
   display.print(p_tm->tm_mon + 1);
@@ -165,21 +165,16 @@ void loop() {
   display.setTextSize(1);
   switch(WiFi.status()){
     case 3:
-      display.setCursor(73,7);
+      display.setCursor(73,0);
       display.print("Connected");
       break;
     default:
-      display.setCursor(55,7);
+      display.setCursor(55,0);
       display.print("Disconnected");
       break;
   }
 
-  // analog read display
-  display.setTextSize(3);
-  display.setCursor(0,20);
-  display.print(analogRead(A0));
-
   display.display();
 
-  delay(1000); // update every 1 sec
+  // delay(1000); // update every 1 sec
 }
